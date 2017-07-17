@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Canvas</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.1/vue.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.7.9/fabric.min.js">
+    </script>
+    <script type="text/javascript" src="./res/jscolor.min.js"></script>
+    <script type="text/javascript" src="./src/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./src/style.css">
+</head>
+<body>
+<div class="container">
+<div class="jumbotron">
+<h1 class="text-center"> Live Canvas </h1>
+<h2 class="text-center"> Make stuff .. Enjoy :)</h2>
+</div>
+<div class="col-md-6">
+    <canvas id="main_canvas"></canvas>
+</div>
+<div class="col-md-6">
+    <div class="text-center control-area">
+    <h1 class="text-center">Control Your Canvas</h1>
+        <h3>Some Stuff:</h3>
+        <button id="addTxt" class="btn btn-primary">Add Text</button>
+        <button id="addImg" class="btn btn-primary">Add Image</button>
+        <button id="uploadImg" class="btn btn-primary">Upload Image</button>
+        <button id="changeBg" class=" btn btn-primary jscolor {valueElement:null,value:'66ccff'}">
+        Change Background</button>
+        <div class="text-center">
+            <h3> More Stuff:</h3>
+            <button id="previousBtn" class="btn btn-primary" onclick="inprogress('previous')"><span class="glyphicon glyphicon-arrow-left"></span></button>
+            <button id="nextBtn" class="btn btn-primary" onclick="inprogress('next')"><span class="glyphicon glyphicon-arrow-right"></button>
+            <button id="clearCanvas" class="btn btn-danger">Clear Canvas</button>
+        </div>
+    </div>
+
+</div>
+</div>
+</body>
+</html>
